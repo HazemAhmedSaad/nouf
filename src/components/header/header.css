@@ -1,6 +1,9 @@
 header{
     color: white !important;
+    position: relative;
+    z-index: 1000;
 }
+
 .logo img{
     width: 117px;
 }

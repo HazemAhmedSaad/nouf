@@ -83,6 +83,8 @@
   .center-element h1 {
     font-size: 64px;
     line-height: 52px;
+        padding: 30px 0;
+
   }
   .center-element p {
     font-size: 20px;
@@ -107,6 +109,7 @@
   }
   .center-element h1 {
     font-size: 48px;
+
   }
   .center-element p {
     font-size: 18px;
@@ -126,7 +129,6 @@
     .center-element h1 {
         font-size: 36px;
         line-height: 40px;
-        padding: 30px 0;
     }
     .center-element p {
         font-size: 16px;
