@@ -1,45 +1,85 @@
 .head-title {
-    font-size: 16px;
-    font-weight: 400;
-    color: #626262;
-    margin: 50px 0; 
-    
+  font-size: 16px;
+  font-weight: 400;
+  color: #626262;
+  margin: 50px 0;
 }
-.tech .img1{
-position: relative;
+.tech h2 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 62.72px;
+  color: #19719D !important;
+    margin-bottom: 150px !important;
+  letter-spacing: -2px;
 }
-.tech .img1 .group{
-    position: absolute;
-    top: -40px;
-    right: 50%;
-    transform: translateX(50%);
-
+.tech .img1 {
+  position: relative;
+}
+.tech .img1 .group {
+  position: absolute;
+  top: -40px;
+  right: 50%;
+  transform: translateX(50%);
 }
 .tech .bgimg1 {
-    background-image: url("../assets/cards/Helper.png");
-    background-size: 110% 110%;
-    width: 300px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 90px;
+  background-image: url("../assets/cards/Helper.png");
+  background-size: 110% 110%;
+  width: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 90px;
 }
-.tech .bgimg1  img{
-    width: 34px;
+.tech .bgimg1 img {
+  width: 34px;
+}
+.tech h5 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 63px;
+}
+.tech p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff80;
+  margin: 20px 0;
+}
+.tech span {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
 
+.col{
+  padding-top: 50px !important;
+position:  relative !important;
 }
-.tech h5{
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 63px;
+
+
+
+
+.tech-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/cards/border.png");
+    background-size: 1% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    pointer-events: none;
 }
-.tech p{
-    font-size: 16px;
-    font-weight: 400;
-    color: #FFFFFF80;
-    margin: 20px 0; 
-}
-.tech span{
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
+.tech-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/cards/border.png");
+    background-size: 1% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    pointer-events: none;
 }

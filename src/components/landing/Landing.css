@@ -1,6 +1,6 @@
 .landing {
   background-color: #000000;
-  height: 122vh;
+  height: 100vh;
   position: relative;
 }
 .pill-label {
@@ -126,6 +126,7 @@
     .center-element h1 {
         font-size: 36px;
         line-height: 40px;
+        padding: 30px 0;
     }
     .center-element p {
         font-size: 16px;
