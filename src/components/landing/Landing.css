@@ -1,67 +1,71 @@
 .landing {
-  height: 110vh;
-  position: relative;
-}
-
-.pill-label {
-  width: 316px;
-  padding: 10px 36px;
-  border-radius: 53.37px;
-  height: 48.034019470214844px;
-  background: linear-gradient(180deg, #ffffff0a, #050505);
-  color: #ffffff7a;
-
-  font-size: 18.68px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 18.68px;
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  border-top: #ffffff0a 1px solid;
-  border-bottom: #ffffff0a 1px solid;
-  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.15),
-    0 6px 18px rgba(0, 0, 0, 0.85);
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
+  padding-bottom: 120px;
+  /* مساحة للصور */
 }
+
+/* ================= Pill Label ================= */
+.pill-label {
+  max-width: 100%;
+  padding: 10px 28px;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #ffffff0a, #050505);
+  color: #ffffff7a;
+  font-size: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.15),
+    0 6px 18px rgba(0, 0, 0, 0.85);
+}
+
+/* ================= Center Content ================= */
+
 
 .center-element {
-  margin-top: 30px;
+  min-height: 70vh;
+  justify-content: flex-start;
+  padding-top: 80px;
 }
 
+
 .center-element h1 {
-  font-size: 74px;
+  font-size: clamp(32px, 5vw, 74px);
   font-weight: 500;
-  letter-spacing: -3px;
-  line-height: 60px;
-  margin-top: 15px;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  margin-top: 20px;
 }
 
 .center-element p {
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 32px;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: 1.5;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #ffffff80;
+  width: 100%;
+  text-align: center;
+  padding: 0 80px;
 }
 
 .landing-subtitle {
-  padding: 0 100px;
+  padding: 0;
+}
+
+/* ================= Images ================= */
+.clip1,
+.clip2 {
+  position: absolute;
+  width: 180px;
+  opacity: 0.8;
 }
 
 .clip1 {
-  position: absolute;
-  width: 200px;
-  height: 200px;
   top: 0;
   right: 0;
 }
 
 .clip2 {
-  position: absolute;
-  width: 300px;
-  height: 300px;
   top: 0;
   left: 0;
 }
@@ -70,88 +74,184 @@
   position: absolute;
   width: 900px;
   bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .iphone {
   position: absolute;
-  width: 330px;
-  height: auto;
+  width: 350px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
+/* ================= Large Screens ================= */
 @media (max-width: 1400px) {
-  .landing {
-  height: 100vh;
-  }
-  .center-element h1 {
-    font-size: 64px;
-    line-height: 52px;
-    padding: 30px 0;
-  
-
-  }
-
-  .center-element p {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .landing-subtitle {
-    padding: 0 20px;
-  }
-
-  .bubble {
-    width: 700px;
-  }
-
-  .iphone {
-    width: 280px;
-  }
-}
-
-@media (max-width : 1024px) {
   .bubble {
     width: 500px;
   }
 
   .iphone {
-    width: 220px;
-  }
-
-  .center-element h1 {
-    font-size: 48px;
-
-  }
-
-  .center-element p {
-    font-size: 18px;
-  }
-
-  .landing-subtitle {
-    padding: 0 20px;
+    width: 200px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) and (min-width: 1025px) {
+  .center-element {
+    min-height: 60vh;
+    padding-top: 60px;
+  }
+
+  .center-element h1 {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+  }
+
+  .center-element p {
+    font-size: 20px;
+  }
+
   .bubble {
-    width: 400px;
+    width: 550px;
+  }
+
+  .iphone {
+    width: 200px;
+  }
+}
+
+/* ================= Tablet ================= */
+@media (max-width: 1024px) {
+  .bubble {
+    width: 450px;
+  }
+
+  .iphone {
+    width: 200px;
+  }
+
+.center-element p {
+    padding: 0;
+  }
+}
+/* ================= Mobile ================= */
+@media (max-width: 767px) {
+  .landing {
+    padding-bottom: 80px;
+  }
+
+  .pill-label {
+
+    font-size: 14px;
+  }
+
+  .bubble {
+    width: 360px;
   }
 
   .iphone {
     width: 180px;
   }
 
+  .center-element {
+    min-height: auto;
+    padding-top: 40px;
+  }
+
+  .center-element p {
+    margin-bottom: 20px;
+  }
+}
+
+/* ================= Small Height Screens ================= */
+
+
+
+@media (max-height: 860px) and (min-width: 1024px) {
+  .landing {
+    min-height: 100vh;
+    padding-bottom: 100px;
+  }
+
+  .center-element {
+    min-height: 55vh;
+    padding-top: 40px;
+  }
+
   .center-element h1 {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .center-element p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .bubble {
+    width: 600px;
+    bottom: -40px;
+  }
+
+  .iphone {
+    width: 240px;
+    bottom: -20px;
+  }
+}
+
+@media (max-height: 700px) {
+  .center-element {
+    padding-top: 20px;
+  }
+}
+
+@media (max-height: 600px)  and (min-width: 1024px) {
+  .landing {
+    min-height: 100vh;
+    padding-bottom: 70px;
+  }
+
+  .center-element {
+    min-height: 45vh;
+    padding-top: 20px;
+  }
+
+  .center-element h1 {
+    font-size: 42px;
+    line-height: 44px;
   }
 
   .center-element p {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
+    margin-bottom: 15px;
   }
+
+  .pill-label {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .bubble {
+    width: 480px;
+    bottom: -60px;
+  }
+
+  .iphone {
+    width: 200px;
+    bottom: -40px;
+  }
+}
+
+@media (max-height: 1400px) and (max-width: 1025px) {
+  
+  .center-element  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

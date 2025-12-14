@@ -5,7 +5,7 @@ import Customers from './components/customers/customer';
 
 function App() {
   return (
-    <div className="app">
+    <div className="app overflow-hidden">
       <Landing />
       <Customers />
       <TimeLine />
