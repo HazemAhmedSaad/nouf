@@ -30,11 +30,13 @@
 
 
 .center-element h1 {
-  font-size: clamp(32px, 5vw, 74px);
+  font-size: clamp(32px, 5vw, 75px);
   font-weight: 500;
   letter-spacing: -2px;
   line-height: 1.1;
   margin-top: 20px;
+  padding: 0 80px;
+
 }
 
 .center-element p {
@@ -45,7 +47,7 @@
   color: #ffffff80;
   width: 100%;
   text-align: center;
-  padding: 0 80px;
+  padding: 0 150px;
 }
 
 .landing-subtitle {
@@ -95,6 +97,10 @@
   .iphone {
     width: 200px;
   }
+  .center-element h1 {
+      font-size: clamp(32px, 5vw, 84px);
+    padding: 0;
+  }
 }
 
 @media (max-width: 1366px) and (min-width: 1025px) {
@@ -124,6 +130,11 @@
 
 /* ================= Tablet ================= */
 @media (max-width: 1024px) {
+    .center-element {
+    min-height: 60vh;
+    padding-top: 60px;
+  }
+
   .bubble {
     width: 450px;
   }

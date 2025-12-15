@@ -10,7 +10,7 @@
   font-size: 64px;
   line-height: 62.72px;
   color: var(--main-color) !important;
-  margin-bottom: 150px !important;
+  margin: 170px 0  100px !important;
   letter-spacing: -2px;
   background-image: linear-gradient(180deg, var(--main-color), var(--second-color));
   -webkit-background-clip: text;
@@ -126,4 +126,14 @@
   background-position: left;
   background-repeat: no-repeat;
   pointer-events: none;
+}
+
+@media (max-width: 767px) {
+.tech h2 {
+  font-size: 50px;
+  line-height: 63px;
+  letter-spacing: 0;
+  display: flex;
+  align-self: flex-start;
+}
 }

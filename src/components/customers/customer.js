@@ -100,8 +100,8 @@ const [techData] = useState([
           alt="Customer 7"
         />
       </div>
-      <div className="tech mt-5">
-        <h2 className="text-center mb-4 text-white">Features & Tech</h2>
+      <div className="tech">
+        <h2 className="text-center text-white">Features & Tech</h2>
         <div className="row container text-white row-cols-1 row-cols-md-2 row-cols-lg-3">
           {techData.map((tech) => (
             <div className="col">

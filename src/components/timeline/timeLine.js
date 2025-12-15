@@ -43,9 +43,9 @@ const TimeLine = () => {
 
   return (
     <div className="time-line mb-5 py-5  container">
-      <h3 className="mb-5 py-5">How it work..?</h3>
+      <h3 className="pb-5">How it work..?</h3>
 
-      <div className="time-line-container  pb-5">
+      <div className="time-line-container pb-5">
         <div className="time-line-column">
           <div></div>
         </div>
