@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../customers/customer.css";
 
 const Customers = () => {
-const [techData] = useState([
+  const [techData] = useState([
     {
       id: 1,
       icon: require("../../../src/assets/cards/ic1.png"),
@@ -100,9 +100,9 @@ const [techData] = useState([
           alt="Customer 7"
         />
       </div>
-      <div className="tech">
+      <div className="tech ">
         <h2 className="text-center text-white">Features & Tech</h2>
-        <div className="row container text-white row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div className="row mx-auto container text-white row-cols-1 row-cols-md-2 row-cols-lg-3">
           {techData.map((tech) => (
             <div className="col">
               <div className="tech-card-grand">
@@ -115,10 +115,7 @@ const [techData] = useState([
                         alt="Tech 1"
                       />
                       <div className="bgimg1">
-                        <img
-                          src={tech.icon}
-                          alt={tech.title}
-                        />
+                        <img src={tech.icon} alt={tech.title} />
                       </div>
                     </div>
                     <h5 className="m-2">{tech.title}</h5>
@@ -128,7 +125,6 @@ const [techData] = useState([
               </div>
             </div>
           ))}
-          
         </div>
       </div>
     </div>

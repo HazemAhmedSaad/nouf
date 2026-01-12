@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.tech .img1 .group {
+.tech .img1  > img:first-child  {
   position: absolute;
   top: -40px;
   right: 50%;
@@ -45,14 +45,14 @@
 .tech h5 {
   font-weight: 500;
   font-size: 26px;
-  line-height: 63px;
+  line-height: 60px;
 }
 
 .tech p {
   font-size: 16px;
   font-weight: 400;
   color: #ffffff80;
-  margin: 20px 0;
+  margin: 15px 0;
   padding: 0 15px;
 }
 

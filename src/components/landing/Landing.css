@@ -97,8 +97,9 @@
   .iphone {
     width: 200px;
   }
+
   .center-element h1 {
-      font-size: clamp(32px, 5vw, 84px);
+    font-size: clamp(32px, 5vw, 84px);
     padding: 0;
   }
 }
@@ -130,7 +131,7 @@
 
 /* ================= Tablet ================= */
 @media (max-width: 1024px) {
-    .center-element {
+  .center-element {
     min-height: 60vh;
     padding-top: 60px;
   }
@@ -143,10 +144,11 @@
     width: 200px;
   }
 
-.center-element p {
+  .center-element p {
     padding: 0;
   }
 }
+
 /* ================= Mobile ================= */
 @media (max-width: 767px) {
   .landing {
@@ -218,7 +220,7 @@
   }
 }
 
-@media (max-height: 600px)  and (min-width: 1024px) {
+@media (max-height: 600px) and (min-width: 1024px) {
   .landing {
     min-height: 100vh;
     padding-bottom: 70px;
@@ -257,8 +259,8 @@
 }
 
 @media (max-height: 1400px) and (max-width: 1025px) {
-  
-  .center-element  {
+
+  .center-element {
     display: flex;
     flex-direction: column;
     justify-content: center;
